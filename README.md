@@ -18,3 +18,4 @@ The colors are from reddit and if you want the colors to look more like the orig
 ```
 
 After that change, it looks like this ![image](https://github.com/VILPAUTOEE/Lemmy_css/assets/90846118/f6ab8906-86ce-498e-95d7-28b535f9a4da)
+https://userstyles.world/style/10421/lemmy-grey-theme
