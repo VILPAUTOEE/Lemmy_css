@@ -63,6 +63,10 @@ body {
   background-color: var(--bg-default);
 }
 
+.bg-light {
+  background-color: #404040 !important;
+}
+    
 .text-success {
   color: var(--success-700) !important;
 }
@@ -100,6 +104,10 @@ body {
 
 .mb-2, .my-2 {
   margin-bottom: 1rem !important;
+}
+    
+.ml-auto, .mx-auto {
+  margin: auto !important;
 }
     
 .comments > .comment + .comment {
@@ -188,12 +196,12 @@ body {
 
 @media (min-width: 768px) {
   .navbar {
-    margin: 3ch;
+    margin: 1ch;
     border-radius: var(--radius-3);
     width: min(100ch, 98%);
     margin-inline: auto;
     position: sticky;
-    top: 5ch;
+    top: 2ch;
     z-index: 999;
     background-color: color-mix(in hsl, var(--bg-primary), transparent 25%);
     backdrop-filter: blur(72px);
@@ -209,6 +217,11 @@ body {
   .navbar {
     padding-block: 1ch !important;
   }
+}
+    
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 150ch;
 }
 
 .btn-group {
@@ -360,7 +373,7 @@ form[id^="comment-form"] .row {
 
 form[id^="comment-form"] .row:first-child {
   padding-block-start: 1ch;
-  margin-block-end: 0;
+  margin-block-end: 1ch;
 }
 
 form[id^="comment-form"] .row:last-child {
@@ -396,7 +409,7 @@ form[id^="comment-form"] textarea.form-control + .card {
 
 .comment .comments {
   padding-inline-start: 2ch;
-  margin-block-start: 2ch;
+  margin-block-start: 1ch;
 }
 
 .comment [id^=comment].comment-node {
@@ -404,9 +417,6 @@ form[id^="comment-form"] textarea.form-control + .card {
   padding: 0 !important;
 }
 
-.comments > .comment + .comment {
-  margin-top: 3ch;
-}
 
 .comments > .comment {
   background-color: var(--bg-primary);
