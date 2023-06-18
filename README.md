@@ -7,3 +7,6 @@ An attempt to make Lemmy look better. I found nice looking style from https://us
 ![SS_of_example_post](https://github.com/VILPAUTOEE/Lemmy_css/assets/90846118/759710a9-c3cd-465f-9c78-34cff936db08)
 
 To install this style go to https://userstyles.world/style/10416/lemmy-dark-theme and click Get stylus and install that extension. After installing stylus, click the install button on https://userstyles.world/style/10416/lemmy-dark-theme and click Install style
+
+If you use an instance other than lemmy.wordl, lemmy.ml or beehaw.org then you have to add your instances domain to the style code
+![image](https://github.com/VILPAUTOEE/Lemmy_css/assets/90846118/ea0e387a-5640-4981-ae13-4ea47be01006)
