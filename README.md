@@ -2,7 +2,7 @@
 
 An attempt to make Lemmy look better. I found nice looking style from https://userstyles.world/style/10345/lemmy-world but I personally prefer dark theme so I adjusted some colours and made the radiuses and margins bigger.
 
-To install this style go to https://userstyles.world/style/10416/lemmy-dark-theme and click Get stylus and install that extension. After installing stylus, click the install button on https://userstyles.world/style/10416/lemmy-dark-theme and click Install style
+To install this style go to https://userstyles.world/style/10416/lemmy-dark-theme and click Get stylus and install that extension. After installing stylus, click the install button on https://userstyles.world/style/10416/lemmy-dark-theme and click Install style. Also go to lemmy's settings and set theme to darkly
 
 If you use an instance other than lemmy.wordl, lemmy.ml or beehaw.org then you have to add your instances domain to the style code
 
