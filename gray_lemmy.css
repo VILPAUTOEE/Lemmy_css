@@ -218,7 +218,6 @@ body {
     padding-block: 1ch !important;
   }
 }
-    
 
 .container, .container-lg, .container-md, .container-sm, .container-xl {
   max-width: 150ch;
@@ -417,6 +416,9 @@ form[id^="comment-form"] textarea.form-control + .card {
   padding: 0 !important;
 }
 
+div.comments {
+  margin-top: 1rem;
+}
 
 .comments > .comment {
   background-color: var(--bg-primary);
