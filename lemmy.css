@@ -475,6 +475,10 @@ form[id^="comment-form"] textarea.form-control + .card {
   padding: 1ch;
   border-radius: var(--radius-3);
 }
+    
+.choices__list--dropdown, .choices__list[aria-expanded] {
+  background-color: var(--bg-accent);
+}
 
 .nav-tabs {
   background-color: var(--bg-accent);
