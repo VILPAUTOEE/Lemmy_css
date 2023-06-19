@@ -7,7 +7,7 @@
 @license      No License
 ==/UserStyle== */
 
-@-moz-document domain("lemmy.world"), domain("lemmy.ml"), domain("beehaw.org") {
+@-moz-document domain("lemmy.world"), domain("lemmy.ml"), domain("beehaw.org"), domain("feddit.de") {
 :root {
   --font-sans: 'Inter', sans-serif;
 }
@@ -43,7 +43,7 @@
 }
 }
 
-@-moz-document domain("lemmy.world"), domain("lemmy.ml"), domain("beehaw.org") {
+@-moz-document domain("lemmy.world"), domain("lemmy.ml"), domain("beehaw.org"), domain("feddit.de") {
 body {
   font-family: var(--font-sans);
 }
@@ -604,7 +604,7 @@ div.comments {
 }
 }
 
-@-moz-document url-prefix("https://lemmy.world/search/"), url-prefix("https://lemmy.ml/search/"), url-prefix("https://beehaw.org/search") {
+@-moz-document url-prefix("https://lemmy.world/search/"), url-prefix("https://lemmy.ml/search/"), url-prefix("https://beehaw.org/search"), url-prefix("http://feddit.de/search") {
 h5 ~ form.form-inline + div:not([class]) {
   display: flex;
   flex-direction: column;
