@@ -1,21 +1,29 @@
-# Lemmy css
+# Lemmy CSS
 
-An attempt to make Lemmy look better. I found nice looking style from https://userstyles.world/style/10345/lemmy-world but I personally prefer dark theme so I adjusted some colours and made the radiuses and margins bigger.
+This repository contains a custom CSS style for Lemmy, aimed at enhancing it's visual appearance. While browsing, I came across a stylish theme on [userstyles.world](https://userstyles.world/style/10345/lemmy-world) that caught my attention. However, since I personally prefer dark themes, I made some modifications to the colors and adjusted the radiuses and margins to create a darker version.
 
-To install this style go to https://userstyles.world/style/10416/lemmy-dark-theme and click Get stylus and install that extension. After installing stylus, click the install button on https://userstyles.world/style/10416/lemmy-dark-theme and click Install style. Also go to lemmy's settings and set theme to darkly
+## Installation
 
-If you use an instance other than lemmy.wordl, lemmy.ml or beehaw.org then you have to add your instances domain to the style code
+To apply this style to your Lemmy instance, follow these steps:
 
-![image](https://github.com/VILPAUTOEE/Lemmy_css/assets/90846118/ea0e387a-5640-4981-ae13-4ea47be01006)
+1. Visit [userstyles.world/style/10416/lemmy-dark-theme](https://userstyles.world/style/10416/lemmy-dark-theme).
+2. Click on "Get stylus" and install the Stylus browser extension.
+3. Once Stylus is installed, click the "Install style" button on [userstyles.world/style/10416/lemmy-dark-theme](https://userstyles.world/style/10416/lemmy-dark-theme).
+4. Open the Lemmy settings and set the theme to "darkly" to finalize the using experience.
 
-![SS_of_lemmy](https://github.com/VILPAUTOEE/Lemmy_css/assets/90846118/fa44740b-1803-4552-b8f8-b9c4e9bf87e3)
-![SS_of_example_post](https://github.com/VILPAUTOEE/Lemmy_css/assets/90846118/759710a9-c3cd-465f-9c78-34cff936db08)
+Please note that if you are using an instance other than lemmy.world, lemmy.ml, feddit.de, or beehaw.org, you will need to add your instance's domain to the style code.
 
-The colors are from reddit and if you want the colors to look more like the original lemmy, change the bg primary and default to hex #303030 and #222222.
-```
---bg-primary: #303030;
---bg-default: #222222;
-```
+## Preview
 
-After that change, it looks like this ![image](https://github.com/VILPAUTOEE/Lemmy_css/assets/90846118/f6ab8906-86ce-498e-95d7-28b535f9a4da)
-https://userstyles.world/style/10421/lemmy-grey-theme
+Here is an image showcasing the dark theme:
+
+![image](https://github.com/VILPAUTOEE/Lemmy_css/assets/90846118/a01a060e-5e16-4548-9b14-01b156c729f9)
+
+
+Additionally, I have created another theme with a different color scheme. Here is an image of the grey theme:
+
+![image](https://github.com/VILPAUTOEE/Lemmy_css/assets/90846118/86b1052a-2c2a-4f39-bcdb-fa23af6281a6)
+
+To try out the grey theme, visit [userstyles.world/style/10421/lemmy-grey-theme](https://userstyles.world/style/10421/lemmy-grey-theme).
+
+Feel free to explore these themes and choose the one that suits your preferences. Enjoy browsing Lemmy with a fresh and visually appealing style!
