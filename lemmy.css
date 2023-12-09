@@ -7,7 +7,7 @@
 @license      No License
 ==/UserStyle== */
 
-@-moz-document domain("lemmy.world"), domain("lemmy.ml"), domain("beehaw.org"), domain("feddit.de") {
+@-moz-document domain("lemmy.world"), domain("lemmy.ml"), domain("beehaw.org"), domain("feddit.de"), domain("lemm.ee"), domain("programming.dev"), domain("sh.itjust.works"), domain("hexbear.net"), domain("lemmy.ca"), domain("lemmy.dbzer0.com"), domain("lemmy.blahaj.zone"), domain("discuss.tchncs.de"), domain("lemmygrad.ml"), domain("sopuli.xyz"), domain("lemmy.sdf.org"), domain("aussie.zone"), domain("lemmy.one"), domain("feddit.nl"), domain("feddit.uk"), domain("reddthat.com"), domain("lemmy.zip") {
 :root {
   --font-sans: 'Inter', sans-serif;
 }
@@ -29,21 +29,21 @@
   --fg-default: color-mix(in hsl, var(--fg-contrast), #fff 20%);
   --fg-subtle: color-mix(in hsl, var(--fg-contrast), #fff 30%);
 
-  --primary-900: hsl(0, 100%, 36%);
-  --primary-700: hsl(0, 100%, 46%);
-  --primary-500: hsl(0, 100%, 56%);
-  --primary-300: hsl(0, 100%, 76%);
-  --primary-100: hsl(0, 100%, 86%);
+  --primary-900: hsl(120, 100%, 15%);
+  --primary-700: hsl(120, 100%, 20%);
+  --primary-500: hsl(120, 60%, 30%);
+  --primary-300: hsl(120, 100%, 76%);
+  --primary-100: hsl(120, 100%, 86%);
 
-  --success-900: hsl(120 100% 13%);
-  --success-700: hsl(120 100% 25%);
-  --success-500: hsl(120 100% 43%);
-  --success-300: hsl(120 80% 73%);
-  --success-100: hsl(120 80% 93%);
+  --success-900: hsl(203, 100%, 13%);
+  --success-700: hsl(203 100% 25%);
+  --success-500: hsl(203 100% 43%);
+  --success-300: hsl(203 80% 73%);
+  --success-100: hsl(203 80% 93%);
 }
 }
 
-@-moz-document domain("lemmy.world"), domain("lemmy.ml"), domain("beehaw.org"), domain("feddit.de") {
+@-moz-document domain("lemmy.world"), domain("lemmy.ml"), domain("beehaw.org"), domain("feddit.de"), domain("lemm.ee"), domain("programming.dev"), domain("sh.itjust.works"), domain("hexbear.net"), domain("lemmy.ca"), domain("lemmy.dbzer0.com"), domain("lemmy.blahaj.zone"), domain("discuss.tchncs.de"), domain("lemmygrad.ml"), domain("sopuli.xyz"), domain("lemmy.sdf.org"), domain("aussie.zone"), domain("lemmy.one"), domain("feddit.nl"), domain("feddit.uk"), domain("reddthat.com"), domain("lemmy.zip") {
 body {
   font-family: var(--font-sans);
 }
@@ -101,6 +101,7 @@ body {
 .navbar {
   background-color: var(--bg-primary);
 }
+
 
 .mb-2, .my-2 {
   margin-bottom: 1rem !important;
@@ -604,9 +605,191 @@ div.comments {
   padding-bottom: 14px;
   padding-right: 10px;
 }
+  
+  
+/* my edits */
+#navbarDropdown {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+  
+.card-header {
+  background-color: unset !important;
+  border-bottom: unset !important;
+  padding-top: 15px;
+}
+  
+#sidebarMain, #sidebarInfo, #sidebarSubscribed, div.person-profile>div>div>div {
+  border-radius: 0;
+}
+  
+.sort-select, div>div>select.form-select.w-auto, #communities-search {
+  border-radius: 100px;
+  background-color: #1a1a1b;
+  border-color: #373734;
+}
+  
+  span.me-3>div.btn-group-toggle {
+    margin-bottom: 2px !important;
+  }
+
+.card-body > .btn {
+  color: white !important;
 }
 
-@-moz-document url-prefix("https://lemmy.world/search/"), url-prefix("https://lemmy.ml/search/"), url-prefix("https://beehaw.org/search"), url-prefix("http://feddit.de/search") {
+.app-footer {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.navbar-nav {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+img.ms-2 {
+  margin: unset !important;
+}
+
+/*markdown text editor*/
+
+form.markdown-textarea>div>div>div.rounded,
+form.markdown-textarea>div>div>div.rounded > div:nth-child(2),
+form.markdown-textarea>div>div>div.rounded>div>textarea.form-control {
+  background-color: var(--bg-primary) !important;
+  border-radius: 0 !important;
+}
+
+form.markdown-textarea>div>div>div.rounded>div>textarea.form-control:focus-visible {
+  outline: unset !important;
+}
+
+/*Communities list page*/
+
+div.communities>div>div.table-responsive>table, table#modlog_table, table#instances_table {
+  border: 1px solid var(--bg-non-essential);
+}
+div.communities>div>div.table-responsive>table>thead>tr>th, table#modlog_table>thead>tr>th, table#instances_table>thead>tr>th {
+  background-color: var(--bg-primary);
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 1.25rem !important;
+  border-bottom: 0;
+}
+div.communities>div>div.table-responsive>table>tbody>tr>td, table#modlog_table>tbody>tr>td, table#instances_table>tbody>tr>td {
+  border-radius: 0 !important;
+  background-color: var(--bg-primary);
+  border-bottom: 0;
+}
+
+
+/*Settings page*/
+
+div#settings-tab-pane>div>div>div {
+  border-radius: 0 !important;
+}
+
+div.person-settings>div>ul {
+  display: inline-flex;
+}
+
+div.person-settings>div>ul>li>button {
+  border-radius: 100px !important;
+  margin: 0 !important;
+  padding-left: 11.25px !important;
+  padding-right: 11.25px !important;
+  color: var(--fg-default);
+}
+
+div.person-settings>div>ul>li>button.active {
+  border-color: var(--bg-primary) !important;
+  background-color: var(--bg-primary) !important;
+}
+
+div.person-settings>div>ul>li>button:hover {
+  color: unset !important;
+}
+
+div.person-settings>div>ul>li>button:active {
+  color: unset !important;
+  background-color: var(--bg-primary) !important;
+}
+
+div.person-settings>div>ul>li>button:hover {
+  background-color: #656565;
+}
+
+/*Settings Language section*/
+div.language-select>div>select {
+  border-radius: 0 !important;
+}
+div.language-select>div>button {
+  border-radius: 0 !important;
+  border-color: var(--fg-default)
+}
+
+/*comment section*/
+ul.comments {
+  border-top: 0 !important;
+}
+
+li.comment>article.comment-node.details > div:nth-child(1) {
+  margin-bottom: 8px;
+}
+.comments > .comment button[aria-label="Expand"]:hover::before {
+  opacity: 0 !important;
+}
+.comments > .comment button[aria-label="Collapse"]:hover::before {
+  opacity: 0 !important;
+}
+
+.comments > .comment button:focus-visible {
+  border: 0px !important;
+}
+
+:is(a, button, .btn, select, input, textarea):focus {
+  border-color: transparent;
+}
+
+/*dropdown menus*/
+.dropdown-item:active, .dropdown-item:hover, .dropdown-item:focus, .dropdown-item.active {
+  background-color: unset !important;
+}
+
+li#dropdownUser>button.dropdown-toggle {
+  border-color: transparent !important;
+  border: 0px !important;
+}
+
+hr.dropdown-divider {
+  border-width: 0
+}
+  
+/*search menu*/
+  div.search.container-lg>div>div>div>div.post-listing {
+    border-radius: 0;
+  }
+  div.search.container-lg>div>div>div>div.post-listing>div>article.post-container {
+    margin-left: 0;
+  }
+  
+  div.search.container-lg>div>div>div>ul.comments>li.comment {
+    border-top: 0;
+    border-radius: 0;
+  }
+  
+  div.search.container-lg>div>div>div>ul.comments {
+    margin-bottom: 0;
+  }
+  
+}
+
+/*posts*/
+div.post.container-lg>div>main>div.post-listing {
+  margin-top: 0 !important;
+}
+
+@-moz-document url-prefix("https://lemmy.world/search/"), url-prefix("https://lemmy.ml/search/"), url-prefix("https://beehaw.org/search"), url-prefix("http://feddit.de/search"), url-prefix("https://lemm.ee/search"), url-prefix("https://programming.dev/search"), url-prefix("https://sh.itjust.works/search"), url-prefix("https://hexbear.net/search"), url-prefix("https://lemmy.ca/search"), url-prefix("https://lemmy.dbzer0.com/search"), url-prefix("https://lemmy.blahaj.zone/search"), url-prefix("https://discuss.tchncs.de/search"), url-prefix("https://lemmygrad.ml/search"), url-prefix("https://sopuli.xyz/search"), url-prefix("https://lemmy.sdf.org/search"), url-prefix("https://aussie.zone/search"), url-prefix("https://lemmy.one/search"), url-prefix("https://feddit.nl/search"), url-prefix("https://feddit.uk/search"), url-prefix("https://reddthat.com/search"), url-prefix("https://lemmy.zip/search") {
 h5 ~ form.form-inline + div:not([class]) {
   display: flex;
   flex-direction: column;
